@@ -1,0 +1,15 @@
+c:\Users\ZSBus\ZacharySmith\Project0\bin\Debug\net8.0\Project0.exe
+c:\Users\ZSBus\ZacharySmith\Project0\bin\Debug\net8.0\Project0.deps.json
+c:\Users\ZSBus\ZacharySmith\Project0\bin\Debug\net8.0\Project0.runtimeconfig.json
+c:\Users\ZSBus\ZacharySmith\Project0\bin\Debug\net8.0\Project0.dll
+c:\Users\ZSBus\ZacharySmith\Project0\bin\Debug\net8.0\Project0.pdb
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.AssemblyInfoInputs.cache
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.AssemblyInfo.cs
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.csproj.CoreCompileInputs.cache
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.sourcelink.json
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.dll
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\refint\Project0.dll
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.pdb
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\Project0.genruntimeconfig.cache
+c:\Users\ZSBus\ZacharySmith\Project0\obj\Debug\net8.0\ref\Project0.dll
