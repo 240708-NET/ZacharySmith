@@ -11,18 +11,18 @@ using System.Dynamic;
 
 
 //Classes
-public class Food
+/*public class Food
 {
     public double price;
-}
-public class Appetizer:Food
+}*/
+/*public class Appetizer:Food
 {
     public double GetAppetizer()
     {
         return price;
     }
-}
-public class Salad:Appetizer
+}*/
+/*public class Salad:Appetizer
 {
     public Salad()
     {
@@ -35,15 +35,15 @@ public class Soup:Appetizer
     {
         price = 5.50;
     }
-}
-public class Dinner:Food
+}*/
+/*public class Dinner:Food
 {
     public double GetDinner()
     {
         return price;
     }
-}
-public class Fish:Dinner
+}*/
+/*public class Fish:Dinner
 {
     public Fish()
     {
@@ -56,15 +56,15 @@ public class Steak:Dinner
     {
         price = 10.00;
     }
-}
-public class Dessert:Food
+}*/
+/*public class Dessert:Food
 {
     public double GetDessert()
     {
         return price;
     }
-}
-public class Cheesecake:Dessert
+}*/
+/*public class Cheesecake:Dessert
 {
     public Cheesecake()
     {
@@ -77,7 +77,7 @@ public class Pie:Dessert
     {
         price = 5.50;
     }
-}
+}*/
 
 //Main
 class Prject0 { 
