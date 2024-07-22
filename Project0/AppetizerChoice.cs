@@ -1,3 +1,5 @@
+namespace Project0;
+
 public class Salad:Appetizer
 {
     public Salad()
