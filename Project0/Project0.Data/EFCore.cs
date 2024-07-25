@@ -8,7 +8,7 @@ namespace Project0.Data
 {
     public class EFCore : IRepository
     {
-        static readonly string connectionstring = "Server=localhost;Database=MyDatabase;User=sa;Password=asw_G_08;TrustServerCertificate=true;";
+        static readonly string connectionstring = "";
         RContext context;
 
         public EFCore()

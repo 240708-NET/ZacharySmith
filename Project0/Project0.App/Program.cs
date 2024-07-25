@@ -87,7 +87,7 @@ class Prject0 {
  
     static public void Main(String[] args) 
     { 
-        //string connectionstring = "Server = LocalServer; Database = MyDatabase; User = sa ; Password = asw_G_08; TrustServerCertificate = true;";
+        //string connectionstring = "";
         IRepository file = new EFCore();
 
         //Variable Declaration

@@ -14,7 +14,7 @@ namespace Project0.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //string ConnectionString = File.ReadAllText("./..connectionstring");
-            optionsBuilder.UseSqlServer("Server=localhost;Database=MyDatabase;User=sa;Password=asw_G_08;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("");
         }
         
     }
