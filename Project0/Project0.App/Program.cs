@@ -10,6 +10,7 @@
 using System.Dynamic;
 using Project0.Food;
 using Project0.Data;
+using Project0.RecieptModel;
 
 namespace Project0.App;
 //Classes
@@ -86,6 +87,9 @@ class Prject0 {
  
     static public void Main(String[] args) 
     { 
+        //string connectionstring = "Server = LocalServer; Database = MyDatabase; User = sa ; Password = asw_G_08; TrustServerCertificate = true;";
+        IRepository file = new EFCore();
+
         //Variable Declaration
         int AppChoice;
         int DinChoice;
@@ -93,7 +97,10 @@ class Prject0 {
         double AppCost;
         double DinCost;
         double DesCost;
-        Double Reciept = 0;
+        string app;
+        string din;
+        string des;
+        double reciept = 0;
 
         //Instructions
         Console.WriteLine("Welcome to the Restaurant.");
@@ -120,57 +127,66 @@ class Prject0 {
         if(AppChoice == 1)
         {
             Salad salad = new Salad();
-            Reciept = Reciept + salad.GetAppetizer();
+            reciept = reciept + salad.GetAppetizer();
             AppCost = salad.GetAppetizer();
+            app = "Salad";
         }
         else if(AppChoice == 2)
         {
             Soup soup = new Soup();
-            Reciept = Reciept + soup.GetAppetizer();
+            reciept = reciept + soup.GetAppetizer();
             AppCost = soup.GetAppetizer();
+            app = "Soup";
         }
         else
         {
-            Reciept = Reciept + 0;
+            reciept = reciept + 0;
             AppCost = 0;
+            app = "None";
         }
 
         //Dinner Logic
         if(DinChoice == 1)
         {
             Fish fish = new Fish();
-            Reciept = Reciept + fish.GetDinner();
+            reciept = reciept + fish.GetDinner();
             DinCost = fish.GetDinner();
+            din = "Fish";
         }
         else if(DinChoice == 2)
         {
             Steak steak = new Steak();
-            Reciept = Reciept + steak.GetDinner();
+            reciept = reciept + steak.GetDinner();
             DinCost = steak.GetDinner();
+            din = "Steak";
         }
         else
         {
-            Reciept = Reciept + 0;
+            reciept = reciept + 0;
             DinCost = 0;
+            din = "None";
         }
 
         //Dessert Logic
         if(DesChoice == 1)
         {
             Cheesecake cheesecake = new Cheesecake();
-            Reciept = Reciept + cheesecake.GetDessert();
+            reciept = reciept + cheesecake.GetDessert();
             DesCost = cheesecake.GetDessert();
+            des = "Cheesecake";
         }
         else if(DesChoice == 2)
         {
             Pie pie = new Pie();
-            Reciept = Reciept + pie.GetDessert();
+            reciept = reciept + pie.GetDessert();
             DesCost = pie.GetDessert();
+            des = "Pie";
         }
         else
         {
-            Reciept = Reciept + 0;
+            reciept = reciept + 0;
             DesCost = 0;
+            des = "None";
         }
 
         //Reciept Print
@@ -213,6 +229,18 @@ class Prject0 {
             Console.WriteLine("Nothing          $ " + DesCost.ToString("F"));
         }
         Console.WriteLine("\n-----------------------------\n");
-        Console.WriteLine("Total:               $" + Reciept.ToString("F"));
+        Console.WriteLine("Total:               $" + reciept.ToString("F"));
+
+        Reciept myReciept = new Reciept(reciept, app, din, des, DateTime.Now);
+
+        try
+        {
+            file.SaveReciept(myReciept);
+            Console.WriteLine("Save Complete");
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine( e.Message );
+        }
     } 
 } 

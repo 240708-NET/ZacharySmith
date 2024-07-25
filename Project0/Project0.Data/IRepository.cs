@@ -1,10 +1,10 @@
-using Project0.Food;
-using Project0.App;
+
+using Project0.RecieptModel;
 
 namespace Project0.Data
 {
     public interface IRepository
     {
-        void SaveReciept(Double Reciept, String app, String din, String des);
+        void SaveReciept(Reciept newReciept);
     }
 }
